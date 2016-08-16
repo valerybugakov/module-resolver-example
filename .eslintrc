@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ['./src'],
+      },
+    },
+  },
+  "rules": {
+    "new-cap": "off",
+    "wrap-iife": ["error", "inside"],
+    "func-names": "off",
+    "max-len": ["error", 80],
+    "semi": ["error", "never"],
+    "react/prop-types": "off",
+    "react/prefer-stateless-function": "off",
+    "no-param-reassign": ["error", { "props": false }],
+    "no-constant-condition": ["error", { "checkLoops": false  }],
+    "import/no-extraneous-dependencies": "off",
+  },
+}
